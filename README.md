@@ -4,19 +4,31 @@ snake game
 ## main.py
 
 from turtle import Screen
+
 from questionmodel import Snake
+
 from food import Food
+
 import time
+
 from scoreboard import Scoreboard
+
 screen = Screen()
+
 screen.setup(width=600, height=600)
+
 screen.bgcolor("black")
+
 screen.title("my snake game")
+
 screen.tracer(0)
 
 snake = Snake()
+
 food = Food()
+
 scoreboard = Scoreboard()
+
 screen.listen()
 
 screen.onkey(snake.up, "U")
